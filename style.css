@@ -1,0 +1,73 @@
+.banner{
+    overflow: hidden;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://images.pexels.com/photos/265072/pexels-photo-265072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    }
+    li a:hover{
+ color: green;
+    }
+    #top{
+       position: fixed;
+    bottom:  40px;
+     right: 40px;
+       width: 50px;
+       background: hsl(6, 78%, 57%);
+       cursor: pointer;
+       z-index: 1000;
+    }
+    #sign-up{
+        position:relative;
+         bottom:6px; 
+        margin-right:45px
+    }
+    #log_in{
+        position: relative;
+        bottom:6px;
+    }
+    #heading{
+        margin: 200px; 
+        padding-top: 150px;
+    }
+    #MG-TECHO{
+        font-size:90px
+    }
+#let-us{
+    font-size: 30px;
+}
+#team-sprit-icon{
+    font-size: 50px;
+}
+#servie-body{
+    height: 350px;
+}
+.fa-code{
+    font-size: 50px;
+}
+.fa-android{
+    font-size: 50px;
+}
+.fa-figma{
+    font-size: 50px;
+}
+.fa-eye{
+    font-size: 50px;
+}
+#milestone-icon{
+    font-size: 30px;
+}
+#signal-logo{
+    font-size: 200px;
+}
+#about-image img{
+    width: 400px;
+}
+.fa-user-shield{
+    font-size: 50px;
+}
+.fa-trophy{
+    font-size: 50px;
+}

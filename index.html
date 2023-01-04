@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Techno Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7021e900e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+
+<body>
+    <div class="banner navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top ">
+            <div class="container">
+                <a href="" class="navbar-brand text-light">
+                    <h5>MG Techno</h5>
+                </a>
+                <button class="navbar-toggler float-right bg-danger" type="button" data-toggle="collapse"
+                    data-target="#navbar9">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse navbar-fixed-top" id="navbar9">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                <h5>Home</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#serv">
+                                <h5>Service</h5>
+                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#serv">
+                                <h5>Technology</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#team">
+                                <h5>Team</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#about">
+                                <h5>About Us</h5>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Sign Up Modal -->
+            <!-- Button trigger modal -->
+
+
+
+            <button type="button" class="btn btn-outline-success" id="sign-up" data-toggle="modal"
+                data-target="#exampleModal">
+                Sign Up
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group mr-5">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control form-control-lg" name=""
+                                                    placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="password" class="form-control" name=""
+                                                    placeholder="Password">
+                                                <small class="text-muted">Password must be 8 character</small>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button text-center" class="btn btn-primary">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Log in modal -->
+
+
+
+
+            <button type="button " class="btn btn-outline-success" data-toggle="modal" id="log_in"
+                data-target="#exampleModal2">
+                Log In
+            </button>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group mr-5">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control form-control-lg" name=""
+                                                    placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="password" class="form-control" name=""
+                                                    placeholder="Password">
+                                                <small class="text-muted">Forgot Password? <a href="#">Reset
+                                                        Password</a></small>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button text-center" class="btn btn-primary">Log In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mt-5" id="heading">
+            <h1 class="text-light" id="MG-TECHO">MG TECHNO<br class="text-light">AGENCY</h1>
+            <p class="text-light" id="let-us">Let us handle your Web Projects</p>
+            <button type="button" class="btn btn-outline-light">Read More</button>
+        </div>
+    </div>
+
+
+    <!-- WHY WORK WITH US SECTION -->
+
+
+    <button id="top"><i class="fa-solid fa-angles-up"></i></button>
+    <div class="bg-dark pb-5">
+        <h2 class="text-center text-light p-5">Why work with us?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow rounded pt-5">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-user-friends" id="team-sprit-icon"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3 text-center">Team Spirit </h4>
+                            <p>For what reason would it be advisable for me to think about business content?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mb-4">
+                    <div class="card border-0 shadow rounded pt-5">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3 text-center">High Security System</h4>
+                            <p>For what reason would it be advisable for me to think about business content?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  mb-4 ">
+                    <div class="card border-0 shadow rounded pt-5">
+                        <div class="card-body">
+                            <div class="text-dark">
+                                <div class="d-flex justify-content-center">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h4 class="mt-4 mb-3 text-center">Result</h4>
+                                <p>For what reason would it be advisable for me to think about business content?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- OUR SERVICE SECTION -->
+
+
+
+    <div id="serv">
+        <div class="container-fluid">
+            <h1 class="text-dark text-center mt-2">Our Service</h1>
+
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12 mb-3">
+                            <div class="card pt-5 mt-5">
+                                <div class="card-body" id="servie-body">
+                                    <div class="d-flex justify-content-center">
+                                        <i class="fas fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="mt-4 mb-3 text-center">Web devlopment</h4>
+                                    <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                        primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mb-3">
+                            <div class="card  pt-5 mt-5">
+                                <div class="card-body" id="servie-body">
+                                    <div class="d-flex justify-content-center">
+                                        <i class="fab fa-android" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="mt-4 mb-3 text-center"> UI Development</h4>
+                                    <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                        primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mb-3">
+                            <div class="card  mt-5 pt-5">
+                                <div class="card-body" id="servie-body">
+                                    <div class="d-flex justify-content-center">
+                                        <i class="fab fa-figma" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="mt-4 mb-3 text-center">App Development </h4>
+                                    <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                        primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mb-3">
+                            <div class="card mt-5 pt-5 bg-white">
+                                <div class="card-body" id="servie-body">
+                                    <div class="d-flex justify-content-center">
+                                        <i class="far fa-eye" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="mt-4 mb-3 text-center">Support</h4>
+                                    <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                        primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Our Milestone  -->
+
+
+
+            <div class="container-fluid bg-dark p-5">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 text-light">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-shopping-bag text-light text-center" id="milestone-icon">
+                                <h4 class="display-6 text-light">1426</h4>
+                                <p class="text-light">Project Done</p>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 text-light">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-smile text-light text-center" id="milestone-icon">
+                                <h4 class="display-6 text-light">1350</h4>
+                                <p class="text-light">Happy Clients</p>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-sm-12 text-light">
+                        <div class="d-flex justify-content-center">
+                            <i class="  fas fa-file-image text-light text-center" id="milestone-icon">
+                                <h4 class="display-6 text-light">1000</h4>
+                                <p class="text-light">Appereciations</p>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3   col-sm-12 text-light">
+                        <div class="d-flex justify-content-center ">
+                            <i class="fas fa-clock text-light text-center" id="milestone-icon">
+                                <h4 class="display-6 text-light">250</h4>
+                                <p class="text-light">Working Hours</p>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- OUR TEAM SECTION -->
+
+
+
+            <div id="team">
+                <h1 class="text-center mt-5 mb-4 bg-warning">Our Team</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 ">
+                                    <img class="d-block w-100 " src="https://images.pexels.com/photos/3756678/pexels-photo-3756678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+                " alt="First slide">
+                                    <h3 class="text-center">Lisa Hyden</h3>
+                                    <p class="text-center">Web Developer</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 ">
+                                    <img class="d-block w-100"
+                                        src=" https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="First slide">
+                                    <h3 class="text-center">Jack rayan</h3>
+                                    <p class="text-center">UI Designer</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center justify-content-around">
+                                    <img class="d-block w-100"
+                                        src="https://images.pexels.com/photos/6937940/pexels-photo-6937940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Second slide">
+                                    <h3 class="text-center">Sam Curran</h3>
+                                    <p class="text-center">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 text-center ">
+                                    <img class="d-block w-100"
+                                        src="https://images.pexels.com/photos/13068694/pexels-photo-13068694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Second slide">
+                                    <h3 class="text-center">Johnny Depp</h3>
+                                    <p class="text-center">AI Developer</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <img class="d-block w-100"
+                                        src="https://images.pexels.com/photos/5882683/pexels-photo-5882683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Second slide">
+                                    <h3 class="text-center">Joe Wills</h3>
+                                    <p class="text-center">Fronted Developer</p>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <img class="d-block w-100"
+                                        src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Second slide">
+                                    <h3 class="text-center">kate parry</h3>
+                                    <p class="text-center">Project Head</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev " href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next " href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TECHNOLOGY WE USE SECTION -->
+
+
+            <div class="row">
+
+            </div>
+
+
+
+
+
+            <!-- ABOUT THIS COMPANY SECTION -->
+
+
+
+
+            <div id="about">
+                <h2 class="text-center mb-5 bg-dark text-light"><b>About Our Company</b></h2>
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        <h1></h1>
+                        <br>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <br><button class="btn btn-outline-warning btn-lg">Read More..</button>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 text-center ">
+                        <span class="glyphicon glyphicon-signal logo text-center" id="signal-logo"></span>
+                        <div id="about-image">
+                            <img src="https://img.freepik.com/free-vector/www-concept-illustration_114360-2143.jpg?w=740&t=st=1660465991~exp=1660466591~
+          hmac=21f52ab5bce5ea88452ba229808c35664a488b182cdfb509be25c45b352f489d">
+                        </div>
+                        <span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Contact us SECTION -->
+
+
+        <div id="contact">
+            <h2 class="text-center mt-5  bg-success"><b>Contact Us</b></h2>
+            <div id="contact" class="container-fluid bg-danger   text-center">
+                <div class="row">
+
+                    <div class="col-lg-5 col-sm-12 pt-5 text-center">
+                        <p class="text-light">Contact us and we'll get back to you within 24 hours.</p>
+                        <p class="text-light"><i class="fas fa-map-marker-alt"></i></span> Ahmedabad, India</p>
+                        <p class="text-light"><i class="fas fa-phone-square"></i></span> +91 1234567810</p>
+                        <p class="text-light"><i class="fas fa-envelope"></i></span> meetgoswami@gmail.com</p>
+
+
+
+
+
+                    </div>
+                    <div class="col-lg-7 col-sm-12  pt-3">
+                        <div class="row">
+                            <div class="col-sm-6 form-group ">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                    required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                            rows="5"></textarea>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-outline-success  btn-md " type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-grayish"></i>MG TECHNO
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus deleniti, 
+                          asperiores accusantium deserunt nobis delectus dolorem. Natus cum autem repellendus!
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-grayish"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-grayish"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-grayish"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3 text-grayish"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <div class="container-fluid mt-5 bg-dark text-center">
+        <big class=" text-warning mt-5"> All Rights Reserved Copyright @2022 Meet Goswami</big>
+
+    </div>
